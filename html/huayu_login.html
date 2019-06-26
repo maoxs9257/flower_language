@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>花语|登录页面</title>
+    <!-- 引入四个文件，必须注意导入顺序-->
+    <link rel="stylesheet" href="../boot/css/bootstrap.css"/>
+    <script src="../boot/js/jquery.min.js"></script>
+    <script src="../boot/js/popper.min.js"></script>
+    <script src="../boot/js/bootstrap.min.js"></script>
+    <script src="../js/huayu_login.js"></script>
+    <link rel="stylesheet" href="../css/花语_login.css"/>
+</head>
+<body>
+<!--引入花语文件头-->
+    <div style= "width:100%; height:220px">
+        <iframe src="html_top.html" width="100%" scrolling="No" noresize="noresize" name="topFrame" height="100%" frameborder="0">
+        </iframe>
+    </div>
+    <div id="reg_img">
+        <table></table>
+        <div id="table_bg">
+            <table class="w-100">
+                <tr>
+                    <td>手机/用户/邮箱</td>
+                    <td class="w-50">
+                        <input class="w-88 border-0 p-1" onblur="check_uname()" id="uname"   type="text"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <span id="msg1" class="w-88 text-danger"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>密码</td>
+                    <td class="w-50">
+                        <input class="w-88 border-0 p-1" placeholder="请输入密码" type="password"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <span class="w-88 text-danger">密码不能为空</span>
+                    </td>
+                </tr>
+                <td></td>
+                <td>
+                    <span class="invisible w-88 h-5">no</span>
+                </td>
+                <tr>
+                    <td>
+                        <button class="btn btn-dark">登录</button>
+                        <button class="btn btn-light">取消</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div style="width:100%;height:745px;">
+        <!--引入html_bottom.html  -->
+        <iframe src="html_bottom.html" width="100%" height="100%" scrolling="No" noresize="noresize" frameborder="0"></iframe>
+    </div>
+</body>
+</html>

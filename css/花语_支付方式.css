@@ -1,0 +1,36 @@
+*{margin:0;padding:0;}
+#text{
+	width:1200px;
+	margin:0 auto;
+	color:#696969;
+	font:13px 微软雅黑;
+	padding-left:200px;
+}
+hr{
+	border:1px dotted rgb(209,209,209);
+	width:1080px;
+}
+p{
+	width:1080px;
+}
+p:first-child,p:nth-child(11),p:nth-child(19){
+	font:700 26px 宋体;
+	padding-top:60px;
+	color:#000;
+}
+p:nth-child(2),p:nth-child(12),p:nth-child(20){
+	font:14px "times new roman";
+	color:#a9a9a9;
+	padding:5px 0;
+	padding-bottom:60px;
+}
+p:nth-child(3),p:nth-child(13),p:nth-child(21){
+	font:14px 宋体;
+	margin-bottom:30px;
+}
+p:nth-child(5),p:nth-child(7),p:nth-child(15),p:nth-child(17){
+	padding:5px 0 30px;
+}
+p:nth-child(9),p:nth-child(17),p:nth-child(23){
+	padding:5px 0 60px;
+}

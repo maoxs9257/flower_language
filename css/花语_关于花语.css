@@ -1,0 +1,52 @@
+#header-img img{
+	width:100%;height:388.078px;
+}
+
+/*主题文章*/
+#font-img{
+	width:1200px;
+	display:flex;
+	justify-content:center;
+	margin:50px auto;
+	
+}
+#font-img>div{
+	width:800px
+}
+#font-img div h2{
+	font-size:24px;
+	color:#000;
+}
+#font-img p:nth-child(2){
+	color:#a9a9a9;
+	font:14px "arial";
+	padding:10px 0 50px 0;
+	text-indent:0;
+}
+#font-img hr{
+	border:1px solid #ddd;
+}
+#font-img div p{
+	font:14px 微软雅黑;
+	color:#222;
+	margin:15px 0;
+	text-indent:30px;
+}
+#font-img div>p:nth-child(4){
+	font-size:16px;
+}
+#font-img div>p:nth-child(16){
+	font-size:16px;
+}
+/*主题竖列三图*/
+#ul_img{
+	width:261px;height:178.906px;
+	list-style:none;
+	margin:94px 0 0 139px;
+}
+#ul_img li{
+	margin:13.5px 0;
+}
+#ul_img a img{
+	width:261px;height:178.906px;
+}
