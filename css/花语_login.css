@@ -19,14 +19,25 @@
     padding:45px 30px;
 }
 
-.w-88{
-    width:88%;
-    height:32px;
-    margin:10px 0;
+td{
+    width: 274px;
+    height:34px;
+    /* margin:10px 0; */
 }
 
+.w-554{
+    width: 554px;
+    height: 231px;
+}
 
+.w-88{
+    width: 268px;
+    height:34px;
+}
 
+.font-18{
+    font-size: 18px;
+}
 
 
 

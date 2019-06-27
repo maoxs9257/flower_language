@@ -20,10 +20,10 @@
     <div id="reg_img">
         <table></table>
         <div id="table_bg">
-            <table class="w-100">
+            <table class="w-554">
                 <tr>
                     <td>手机/用户/邮箱</td>
-                    <td class="w-50">
+                    <td>
                         <input class="w-88 border-0 p-1" onblur="check_uname()" id="uname"   type="text"/>
                     </td>
                 </tr>
@@ -35,20 +35,22 @@
                 </tr>
                 <tr>
                     <td>密码</td>
-                    <td class="w-50">
-                        <input class="w-88 border-0 p-1" placeholder="请输入密码" type="password"/>
+                    <td>
+                        <input class="w-88 border-0 p-1" onblur="check_pwd()" id="upwd" type="password"/>
                     </td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>
-                        <span class="w-88 text-danger">密码不能为空</span>
+                        <span id="msg2" class="w-88 text-danger"></span>
                     </td>
                 </tr>
                 <td></td>
                 <td>
-                    <span class="invisible w-88 h-5">no</span>
+                    <input type="checkbox" id="hy">
+                    <label for="hy" class="font-18">记住我（请在私人计算机上使用此功能）</label>
                 </td>
+                </tr>
                 <tr>
                     <td>
                         <button class="btn btn-dark">登录</button>
