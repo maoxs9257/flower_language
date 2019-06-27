@@ -39,7 +39,9 @@ td{
     font-size: 15px;
 }
 
-
+span>label{
+    display: inline;
+}
 
 
 
