@@ -1,0 +1,21 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+/* 表格样式 */
+input{
+    width:90%;
+    background: #fff;
+    height:32px;
+}
+
+/* 文字div左内边距 */
+#table_bg table{
+    padding-left:30px !important;
+}
+
+/* span*的样式 */
+.w-544 tr td span{
+    color:#f00;
+}
