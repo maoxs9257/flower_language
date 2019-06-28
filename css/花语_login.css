@@ -33,6 +33,7 @@ td{
 .w-88{
     width: 268px;
     height:34px;
+    border-radius:3px;
 }
 
 .font-18{
@@ -43,5 +44,45 @@ span>label{
     display: inline;
 }
 
+p a>img{
+    width: 17px;
+    height:17px;
+    margin-left: 5px;
+}
 
+.qq-font{
+    font-size: 13px;
+    margin: 20px 10px 15px;
+}
 
+.get-back{
+    font-size: 13px;
+    color:#707070;
+    text-decoration: none;
+    margin-left:30px;
+}
+/* .get-back:hover{
+    color:#707070;
+    text-decoration:none;
+} */
+
+.explain_login p{
+    font-size:13px;
+    margin-bottom: 4px;
+}
+
+a{
+    color:#707070;
+    text-decoration: none;
+}
+a:hover{
+    color:#707070;
+    text-decoration:none;
+}
+
+/* 下半部分div整体样式 */
+.explain_login{
+    border-top:1px solid #fff;
+    margin:40px 0;
+    padding: 40px 0;
+}
