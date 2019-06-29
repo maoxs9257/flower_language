@@ -34,13 +34,33 @@
 	justify-content:center;
 	margin:20px auto;
 	height:20px;
+	position: relative;
 }
 
 #nav span a{
 	width:150px;
 	display:inline-block;
-	text-decoration:none;
+	text-decoration:none; 
 	font-size:13px;
 	color:#707070;
 	text-align:center;
+}
+
+/* 下拉选菜单 */
+.dropdown_one{
+	position: absolute;
+	top:20px;
+	left:266px;
+	display:none;
+	border:1px solid #e0e0e0;
+	background:rgba(240,240,240,.5);
+	border-radius:3px;
+}
+#nav:hover .dropdown_one{
+	display:block;
+}
+
+.dropdown_one p a{
+	font-size: 13px;
+	color:#757575;
 }
