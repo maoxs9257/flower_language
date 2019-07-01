@@ -1,30 +1,30 @@
 *{margin:0;padding:0;}
-/*轮播图效果*/
+/*锟街诧拷图效锟斤拷*/
 @media (min-width: 1200px){
     .container {
         max-width:100%;
     }
 }
-/*修改左右箭头样式*/
+/*锟睫革拷锟斤拷锟揭硷拷头锟斤拷式*/
 .carousel-control-next,.carousel-control-prev{
     width:4%;height:20%;top:40%;
     background-color:#aaa;border-radius:0.25rem;
     }
-/*修改指示器样式*/
+/*锟睫革拷指示锟斤拷锟斤拷式*/
 .carousel-indicators li{
     width:0.8rem;height:0.8rem;
     border-radius:50%;
     background:#fff;
     margin:0 6px;
     }
-/*修改指示器颜色*/
+/*锟睫革拷指示锟斤拷锟斤拷色*/
 .carousel-indicators .active{
     background:#0aa1ed;
     }
 .container{
     padding:0;
     }
-/*第二，三图效果*/
+/*锟节讹拷锟斤拷锟斤拷图效锟斤拷*/
 .l_r_img{
     width:1200px;
     margin: 50px auto 0px;
@@ -46,21 +46,3 @@
 .l_r_img #left_img{
     margin-right: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
