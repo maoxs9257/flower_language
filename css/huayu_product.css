@@ -24,6 +24,14 @@
 
 
 /* 商品显示样式 */
+/* 外层大div样式 */
+.body_top_pro{
+    width:1200px;
+    margin:0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
 .body_pro_img{
     width:360px;
     height:350px;
@@ -69,3 +77,14 @@
     cursor: pointer;
 }
 
+.font-c-i{
+    color:rgba(24,12,143,.5);
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.price{
+    font-size: 18px;
+    letter-spacing:1px;
+}
