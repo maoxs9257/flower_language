@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 最外层框架 */
+.offline_tamp{
+    width:1200px;
+    margin:0 auto;
+    display:flex;
+}
+.offline_tamp .left_map{
+    width:60%;
+}
+.left_map p{
+    color:#696969;
+    font-size: 13px;
+}
