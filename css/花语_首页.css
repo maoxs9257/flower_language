@@ -42,3 +42,24 @@
     height: 328.8px;
     padding: 6px;
 }
+.l_r_img #left_img{
+    position: relative;
+    left:-190px;
+    opacity: 0;
+    transition:all 1s linear;
+}
+.l_r_img div:first-child{
+    left: 0;
+    opacity: 1;
+}
+.l_r_img #right_img{
+    position: relative;
+    right:-210px;
+    opacity: 0;
+    transition: all 1s linear;
+}
+.l_r_img div:last-child{
+    right: 0;
+    opacity: 1;
+}
+
