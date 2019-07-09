@@ -33,6 +33,7 @@
     width:1200px;
     margin: 50px auto 0px;
     display:flex;
+    justify-content: space-between;
 }
 .l_r_img #left_img,
 .l_r_img #right_img{
@@ -63,12 +64,12 @@
 /* 动画样式 */
 /* 左侧 */
 @keyframes huayu-left{
-    0%{position: relative; left:-900px;opacity: 0; }
+    0%{position: relative; left:-180px;opacity: 0; }
     100%{position:relative;left: 0;opacity: 1;}
 }
 /* 右侧 */
 @keyframes huayu-right{
-    0%{position: relative;right:-900px;opacity: 0;}
+    0%{position: relative;right:-180px;opacity: 0;}
     100%{position: relative;right:0;opacity:1;}
 }
 /* 今日上新样式 */
@@ -110,6 +111,7 @@
     padding:6px 8px;
 }
 hr{
+    width:1200px;
     border:0.5px solid #111;
 }
 .about_more>a:hover{
@@ -126,9 +128,11 @@ hr{
 }
 /* 今日上新的商品样式 */
 .huayi_02{
+    width: 1200px;
+    height:400px;
     margin-top:70px;
     display:flex;
-    justify-content: space-between;
+    justify-content:space-between;
     position: relative;
 }
 .left_huayi_1{
@@ -139,7 +143,15 @@ hr{
     top:0;
     box-shadow: 0;
     transition: all 0.5s linear;
+    margin:5px 8px;
+    animation: up_hua 1s ease-out 1;
 }
+/* 动画过度向上出现的效果 */
+@keyframes up_hua{
+    0%{transform:translateY(400px);visibility:hidden;}
+    100%{transform:translateY(0);visibility: visible;}
+}
+
 .left_huayi_1 a img{
     transform:scale(1);
     width:237px;
@@ -157,13 +169,49 @@ hr{
 .font_huayi{
     width:100%;
     display:inline-block;
-    border-top:0;
+    padding-top:20px;
+    border:0;
+    transition:all 2s linear;
 }
 .left_huayi_1 p>a{
     text-decoration: none;
     color:#707070;
     font-size: 15px;
 }
-.font_huayi:hover{
-    border-top:2px solid #373a41;
+/* 动画商品中间横线循环效果 */
+@keyframes border_tra{
+    0%{border-bottom:1px solid #c5cbd8;}
+    50%{border-bottom: 1px solid #000}
+    100%{border-bottom:1px solid #9c9fa7; }
+}
+.left_huayi_1:hover .font_huayi{
+    /* border-bottom:1px solid #373a41; */
+    animation:border_tra 2s ease-out infinite;
+}
+.huayi_02 p:last-child{
+    font-size: 16px;
+    padding:15px 0;
+    color:#000;
+}
+/* 大图+倒计时 */
+.dis_tape{
+    width:1200px;
+    margin:0 auto;
+}
+.left_img_djs,.right_img_djs{
+    width:49%;
+    display:inline-block;
+    margin-top:40px;
+    text-align: center;
+}
+.left_img_djs>img,.right_img_djs>img{
+    width:100%;
+}
+.left_img_djs{
+    margin-right: 16px;
+}
+.left_img_djs>p,.right_img_djs>p{
+    border:1px solid #ddd;
+    background:#f7f7f7;
+    letter-spacing: 3px;
 }
