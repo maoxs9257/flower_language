@@ -48,30 +48,30 @@
     padding: 6px;
 }
 .l_r_img #left_img{
-    /* position: relative;
-    left:-190px;
-    opacity: 0; */
-    /* transition:all 1s linear; */
-    animation:huayu-left 2s ease-out 1 ;
+    position: relative;
+    left:-900px;
+    opacity: 0;
+    transition:all 1s linear;
+    /* animation:huayu-left 2s ease-out 1 ; */
 }
 .l_r_img #right_img{
-    /* position: relative;
-    right:-210px;
-    opacity: 0; */
-    /* transition: all 1s linear; */
-    animation:huayu-right 2s ease-out 1;
+    position: relative;
+    right:-900px;
+    opacity: 0;
+    transition: all 1s linear;
+    /* animation:huayu-right 2s ease-out 1; */
 }
 /* 动画样式 */
 /* 左侧 */
-@keyframes huayu-left{
+/* @keyframes huayu-left{
     0%{position: relative; left:-180px;opacity: 0; }
     100%{position:relative;left: 0;opacity: 1;}
 }
 /* 右侧 */
-@keyframes huayu-right{
+/* @keyframes huayu-right{
     0%{position: relative;right:-180px;opacity: 0;}
     100%{position: relative;right:0;opacity:1;}
-}
+} */ */
 /* 今日上新样式 */
 .new_pro{
     width:1200px;
