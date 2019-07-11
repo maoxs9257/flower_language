@@ -11,12 +11,15 @@
 }
 /*�޸����Ҽ�ͷ��ʽ*/
 .carousel-control-next,.carousel-control-prev{
-    width:4%;height:20%;top:40%;
+    width:4%;
+    height:20%;
+    top:40%;
     background-color:#aaa;border-radius:0.25rem;
     }
 /*�޸�ָʾ����ʽ*/
 .carousel-indicators li{
-    width:0.8rem;height:0.8rem;
+    width:0.8rem;
+    height:0.8rem;
     border-radius:50%;
     background:#fff;
     margin:0 6px;
@@ -49,14 +52,14 @@
 }
 .l_r_img #left_img{
     position: relative;
-    left:-900px;
+    left:-200px;
     opacity: 0;
     transition:all 1s linear;
     /* animation:huayu-left 2s ease-out 1 ; */
 }
 .l_r_img #right_img{
     position: relative;
-    right:-900px;
+    right:-200px;
     opacity: 0;
     transition: all 1s linear;
     /* animation:huayu-right 2s ease-out 1; */
@@ -71,7 +74,7 @@
 /* @keyframes huayu-right{
     0%{position: relative;right:-180px;opacity: 0;}
     100%{position: relative;right:0;opacity:1;}
-} */ */
+} */
 /* 今日上新样式 */
 .new_pro{
     width:1200px;
@@ -140,17 +143,18 @@ hr{
     border:1px solid #e5e5e5;
     text-align: center;
     position: absolute;
-    top:0;
+    top:437px;
+    opacity: 0;
     box-shadow: 0;
-    transition: all 0.5s linear;
+    transition: all 1s linear;
     margin:5px 8px;
-    animation: up_hua 1s ease-out 1;
+    /* animation: up_hua 1s ease-out 1; */
 }
 /* 动画过度向上出现的效果 */
-@keyframes up_hua{
+/* @keyframes up_hua{
     0%{transform:translateY(400px);visibility:hidden;}
     100%{transform:translateY(0);visibility: visible;}
-}
+} */
 
 .left_huayi_1 a img{
     transform:scale(1);
@@ -198,20 +202,34 @@ hr{
     width:1200px;
     margin:0 auto;
 }
-.left_img_djs,.right_img_djs{
+#left_img_djs,#right_img_djs{
     width:49%;
     display:inline-block;
     margin-top:40px;
     text-align: center;
 }
-.left_img_djs>img,.right_img_djs>img{
+#left_img_djs>img,#right_img_djs>img{
     width:100%;
 }
-.left_img_djs{
+#left_img_djs{
     margin-right: 16px;
 }
-.left_img_djs>p,.right_img_djs>p{
+#left_img_djs>p,#right_img_djs>p{
     border:1px solid #ddd;
     background:#f7f7f7;
     letter-spacing: 3px;
+}
+
+#left_img_djs{
+    position: relative;
+    left:-200px;
+    opacity: 0;
+    transition:all 1s linear;
+    /* animation:huayu-left 2s ease-out 1 ; */
+}
+#right_img_djs{
+    position: relative;
+    right:-200px;
+    opacity: 0;
+    transition: all 1s linear;
 }
