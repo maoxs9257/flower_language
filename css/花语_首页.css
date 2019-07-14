@@ -245,20 +245,20 @@ hr{
 	border-radius:5px;
 	box-shadow:1px 1px 3px rgba(0,0,0,0.2);
     }
-/* 浪漫之花左右样式 */
-.dd_z{
+/* 浪漫你我左右样式 */
+/* .dd_z{
     width:1200px;
     margin:0 auto;
     margin-top:50px;
     position: relative;
-}
-.dd_z .jr_new{
+} */
+/* .dd_z .jr_new{
     font-size: 20px;
 }
 .dd_z .about_more>a{
     position:absolute;
     top:1px;
-}
+} */
 .le_ri_flow{
     width:1200px;
     margin:0 auto;
@@ -274,12 +274,19 @@ hr{
 }
 #le_ri_low{
     margin-right: 16px;
+    position: relative;;
+    opacity:0;
+    left:-200px;
+    transition:all 1s linear;
 }
 
 #le_ri_right{
     height:323.39px;
     background: #f7f7f7;
-    position: relative;
+    position: relative;;
+    opacity:0;
+    right:-200px;
+    transition:all 1s linear;
 }
 #le_ri_right>img{
     margin-left: 50px;
@@ -291,4 +298,145 @@ hr{
     position: absolute;
     top:90px;
     letter-spacing: 5px;
+}
+#le_ri_right p{
+    font-size: 15px;
+    line-height: 2em;
+    padding:2px 21px;
+    color:rgb(141,141,141);
+}
+#le_ri_right p:nth-child(3){
+    margin-top:40px;
+}
+/* 装点家园 */
+.zhuangdian_home{
+    width: 100%;
+    height: 595px;
+    overflow: hidden;  
+    text-align: center;  
+}
+.zhuangdian_home .zhuangdian_home_1{
+    width:22%;
+    border:0;
+    transition:all .5s linear;
+} 
+.bottom_top{
+    display:flex;
+    justify-content: space-between;
+    transform: translateY(595px); 
+    transition: all 1s linear;
+}
+/* 第一,三个样式 */
+.home_1_1{
+    padding-bottom: 101px;
+}
+.home_1_2>a{
+    color:#707070;
+    font-size: 13px;
+    text-decoration: none;
+    
+}
+.home_1_2>p{
+    color:#000;
+    font-size: 24px;
+    padding:20px 0;
+    font-weight: 500;
+}
+.home_1_2{
+    margin-top: 60px;
+    padding-bottom:80px; 
+}
+/* 第二，四个样式 */
+.home_2_1>a{
+    color:#707070;
+    font-size: 13px;
+    text-decoration: none;
+    
+}
+.home_2_1>p{
+    color:#000;
+    font-size: 24px;
+    padding:20px 0;
+    font-weight: 500;
+}
+.home_2_1{
+    margin-top: 60px;
+    padding-bottom:80px;
+}
+.home_2_2{
+    padding-bottom: 101px;
+}
+.zhuangdian_home_1 img{
+    width:90%;
+    height:90%;
+    text-align: center;
+    transition: all 0.5s linear;
+}
+/* 鼠标悬停效果 */
+.zhuangdian_home_1:hover{
+    transform: scale(0.9);
+    border: 1px solid #dddddd;
+    box-shadow:-8px 10px 2px #f7f7f7;
+}
+.zhuangdian_home_1:hover img{
+    transform: scale(1.1);
+}
+/* 底部文字与图片 */
+.bo-fo-to{
+    width:1200px;
+    margin:0 auto;
+    overflow:hidden;
+    display: flex;
+    justify-content: space-between;
+}
+.bottom_font_img{
+    width: 60%;
+    transform: translateX(-900px);
+    transition: all 1s linear;
+}
+.bottom_right_img{
+    width:38%;
+}
+.bottom_d1{
+    width:36%;
+}
+.bottom_d2{
+    width:61%;
+}
+.bottom_d1>a{
+    width:100%;
+}
+.bottom_d1 a>img{
+    width:100%;
+    padding:5px 0 8px 5px;
+}
+.bottom_d2>a{
+    display:inline-block;
+    margin-top:30px;
+    text-decoration: none;
+    color:#333;
+}
+.bottom_d2 p:nth-child(2){
+    color:#999;
+    font-size: 13px;
+    padding: 10px 0 20px;
+    margin-bottom: 0;
+}
+.bottom_d2 p:last-child{
+    color:#777;
+    font-size: 13px;
+}
+.bottom_top_img{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    border:1px solid #ddd;
+    margin-bottom:38px;
+}
+.bottom_right_img>img{
+    height:430px;
+}
+.bottom_right_img{
+    transform: translateX(900px);
+    transition: all 1s linear;
 }

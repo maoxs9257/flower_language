@@ -8,6 +8,14 @@ window.onload=function(){
     var right_img_djs=document.getElementById("right_img_djs");
     // 今日上新效果
     var left_huayi_1=document.getElementsByClassName("left_huayi_1");
+    // 浪漫你我左右效果
+    var le_ri_low=document.getElementById("le_ri_low");
+    var le_ri_right=document.getElementById("le_ri_right");
+    // 装点家园效果
+    var bottom_top=document.getElementsByClassName("bottom_top");
+    // 底部大图和文字
+    var left_ove=document.getElementById("left_ove");
+    var right_ove=document.getElementById("right_ove");
     window.onscroll=function(){
         var scrollTop=document.body.scrollTop || document.documentElement.scrollTop;
         // 两张大图
@@ -29,7 +37,25 @@ window.onload=function(){
             for(var img of left_huayi_1){
                 img.style="top:0px";
                 img.style.opacity="1";
+            }
         }
+        // 浪漫你我
+        if(scrollTop>=1500){
+            le_ri_low.style="left:0px";
+            le_ri_low.style.opacity="1";
+            le_ri_right.style="right:0px";
+            le_ri_right.style.opacity="1";
+        }
+        // 装点家园
+        if(scrollTop>=2062){
+            for(var top of bottom_top){
+                top.style.transform="translateY(0)";
+            }
+        }
+        // 底部大图和文字
+        if(scrollTop>=2700){
+            left_ove.style.transform="translateX(0)";
+            right_ove.style.transform="translateX(0)";
         }
     }
 }
