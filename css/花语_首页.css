@@ -269,7 +269,7 @@ hr{
     width:49%;
     display: inline-block;
 }
-#le_ri_low img{
+#le_ri_low video{
     width:100%;
 }
 #le_ri_low{
@@ -431,14 +431,20 @@ hr{
     display: flex;
     justify-content: space-between;
     border:1px solid #ddd;
-    margin-bottom:38px;
+    margin-bottom:10px;
 }
-.bottom_right_img>img{
+/* .bottom_right_img>img{
     height:430px;
-}
+    width:100%;
+} */
 .bottom_right_img{
+    display:flex;
+    justify-items: center;
     transform: translateX(900px);
     transition: all 1.5s linear;
+}
+.bottom_right_img>video{
+    width:100%;
 }
 /* 底部商品服务 */
 .foot_service{
@@ -451,6 +457,7 @@ hr{
 }
 .foot_service_font{
     width:24%;
+    margin-top:50px;
     margin-bottom:70px;
 }
 .foot_service_font>div{
@@ -525,7 +532,16 @@ hr{
     width:80px;
     text-align: center;
 }
+ul>li .img_xin{
+    background-image: url(../img/love.png);
+    width:32px;
+    height:28px;
+    transition:all .3s linear;
+}
 .right_center>ul>li:hover{
     transform: translateX(0);
     background:#0ff;
+}
+.right_center>ul>li:hover .img_xin{
+    background-image: url(../img/love2.png);
 }

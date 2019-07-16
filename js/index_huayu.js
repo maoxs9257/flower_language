@@ -33,14 +33,14 @@ window.onload=function(){
             right_img.style.opacity="1";
         }
         // 限时促销
-        if(scrollTop>=1300){
+        if(scrollTop>=1200){
             left_img_djs.style="left:0px";
             left_img_djs.style.opacity="1";
             right_img_djs.style="right:0";
             right_img_djs.style.opacity="1";
         }
         // 今日上新
-        if(scrollTop>=900){
+        if(scrollTop>=600){
             for(var img of left_huayi_1){
                 img.style="top:0px";
                 img.style.opacity="1";
@@ -54,7 +54,7 @@ window.onload=function(){
             le_ri_right.style.opacity="1";
         }
         // 装点家园
-        if(scrollTop>=2600){
+        if(scrollTop>=2100){
             for(var top of bottom_top){
                 top.style.transform="translateY(0)";
             }
