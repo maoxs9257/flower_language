@@ -523,7 +523,7 @@ hr{
     margin:5px 0;
     border-top-left-radius:5px;
     border-bottom-left-radius: 5px;
-    transition:all .4s linear; 
+    transition:all .3s linear; 
 }
 .right_center ul li>a{
     color: #707070;
@@ -544,4 +544,94 @@ ul>li .img_xin{
 }
 .right_center>ul>li:hover .img_xin{
     background-image: url(../img/love2.png);
+}
+/* 左边侧边栏 */
+.left_produce{
+    position: fixed;
+    top:160px;
+    left:15px;
+    border:1px solid #fff;
+    width:110px;
+    opacity: .6;
+    box-shadow: -5px 5px 5px #777;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.left_produce a{
+    color:#0e0214;
+    text-decoration:none;
+    text-align: center;
+}
+.ren_sever{
+    background:#bbb;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.ren_sever a>div{
+    display:inline-block;
+    width:30px;
+    height:30px;
+    background-image: url(../img/index/ren_1.png);
+    vertical-align: middle;
+}
+.ren_sever a>span{
+    display: inline-block;
+    height:50px;
+    line-height: 50px;
+    vertical-align: middle;
+}
+.ren_sever:hover .img_ren{
+    background-image: url(../img/index/ren_2.png);
+}
+.ren_sever:hover{
+    background:yellow;
+}
+.left_produce ul li{
+    list-style: none;
+    margin-top:5px;
+    background:rgba(197,201,204,.4);
+    border-radius: 3px;
+}
+.left_produce ul li>.yuan_img{
+    width:32px;
+    height:32px;
+    margin:0 auto;
+    background-image: url(../img/index/yuan_1.png);
+}
+.left_produce ul li:hover .yuan_img{
+    background-image: url(../img/index/yuan_2.png);
+}
+.left_produce ul li>a span{
+    display:inline-block;
+    height:30px;
+    width:100%;
+    line-height: 30px;
+    text-align: center;
+}
+.left_produce ul li>.britday_img{
+    width:32px;
+    height:32px;
+    margin:0 auto;
+    background-image: url(../img/index/birtday_1.png);
+}
+.left_produce ul li:hover .britday_img{
+    background-image: url(../img/index/birtday_2.png);
+}
+.left_produce ul li>.love_flower{
+    width:32px;
+    height:32px;
+    margin:0 auto;
+    background-image: url(../img/index/flower_1.png);
+}
+.left_produce ul li:hover .love_flower{
+    background-image: url(../img/index/flower_2.png);
+}
+.left_produce ul li>.gb_p{
+    width:32px;
+    height:32px;
+    margin:0 auto;
+    background-image: url(../img/index/gangbi_2.png);
+}
+.left_produce ul li:hover .gb_p{
+    background-image: url(../img/index/gangbi_1.png);
 }
