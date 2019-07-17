@@ -551,6 +551,7 @@ ul>li .img_xin{
     top:160px;
     left:15px;
     border:1px solid #fff;
+    display: none;
     width:110px;
     opacity: .6;
     box-shadow: -5px 5px 5px #777;
@@ -634,4 +635,19 @@ ul>li .img_xin{
 }
 .left_produce ul li:hover .gb_p{
     background-image: url(../img/index/gangbi_1.png);
+}
+/* 二维码 */
+.er_wei{
+    position: fixed;
+    top:472px;
+    left:130px;
+    width:100px;
+    height:100px;
+    opacity: 1;
+    background-image: url(../img/index/erweima1.jpg);
+    box-shadow: -5px 5px 5px #bbb;
+    display: none;
+}
+.youhui_1:hover .er_wei{
+    display: block;
 }

@@ -21,8 +21,10 @@ window.onload=function(){
     var foot_d2=document.getElementById("foot_d2");
     var foot_d3=document.getElementById("foot_d3");
     var foot_d4=document.getElementById("foot_d4");
-    // 侧边导航栏
+    // 右侧边导航栏
     var right_cb_lan=document.getElementById("right_cb_lan");
+    // 左侧边栏
+    var left_produce=document.getElementsByClassName("left_produce")[0];
     window.onscroll=function(){
         var scrollTop=document.body.scrollTop || document.documentElement.scrollTop;
         // 两张大图
@@ -76,6 +78,13 @@ window.onload=function(){
             right_cb_lan.style="opacity:0 ;";
         }else if(scrollTop>=700){
             right_cb_lan.style="opacity:1 ;";
+        }
+        // 左侧边栏
+        if(scrollTop>=700){
+            left_produce.style.display="block";
+        }
+        if(scrollTop<700){
+            left_produce.style.display="none";
         }
     }
 }

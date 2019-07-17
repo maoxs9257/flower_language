@@ -17,6 +17,9 @@
 	position:relative;
 	left:45%;
 }
+#top-header2 a{
+	text-decoration: none;
+}
 #top-header2 a img{width:22px;
 	margin:10px 20px 0 0;
 }
@@ -34,14 +37,11 @@
 	justify-content:center;
 	margin:20px auto;
 	height:20px;
-	text-align: center;
-	
+	text-align: center;	
 }
-
 #nav span{
 	position: relative;
 }
-
 #nav span a{
 	width:150px;
 	display:inline-block;
@@ -50,7 +50,6 @@
 	color:#707070;
 	text-align:center;
 }
-
 /* 下拉选菜单 */
 .dropdown_one{
 	position: absolute;
@@ -64,12 +63,10 @@
 .stop_one:hover .dropdown_one{
 	display:block;
 }
-
 .stop_one .dropdown_one p a{
 	font-size: 13px;
 	color:#757575;
 }
-
 .dropdown_two{
 	position: absolute;
 	top:20px;
@@ -79,7 +76,51 @@
 	background: rgba(240,240,240,.5);
 	border-radius:3px;
 }
-
 .stop_two:hover .dropdown_two{
 	display:block;
+}
+/* 搜索框 */
+.sousuo{
+	width:48%;
+	height:170px;
+	border:2px solid #757575;
+	position: fixed;
+	top:50%;
+	left: 50%;
+	margin-top:-85px;
+	margin-left: -384px;
+	background: #fff;
+	display: none;
+}
+.sousuo>input{
+	width:90%;
+	height:40px;
+	display:block;
+	margin:35px auto;
+	position: relative;
+	background: #eeeeee;
+	border:0;
+	font-size: 16px;
+}
+.sousuo>button{
+	border:0;
+	font-size: 14px;
+	background:#fff;	
+	height:30px;
+	width:60px; 
+}
+.sousuo button:nth-child(2){
+	position:absolute;
+	right:120px;
+	top:120px;
+}
+.sousuo button:nth-child(3){
+	position:absolute;
+	right:50px;
+	top:120px;
+}
+.sousuo>button:hover{
+	background:#e0e0e0;
+	color:#000;
+	border:1px solid #707070;
 }
