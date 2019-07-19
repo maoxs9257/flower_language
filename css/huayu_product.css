@@ -189,6 +189,8 @@
 /* 中间增加项 */
 .ul_product{
     padding: 20px;
+    height:510px;
+    overflow:auto;
 }
 .ul_product ul>li{
     list-style: none;
@@ -209,7 +211,7 @@
 .small_img>.guanbi_img{
     width:16px;
     height:16px;
-    margin-left: 174px;
+    margin-left: 155px;
     margin-bottom: 20px;
     background-image: url(../img/product/cha3.png);
 }

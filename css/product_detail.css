@@ -103,6 +103,7 @@ input{
     height:40px;
 }
 .product-font .count{
+    display: inline-block;
     width:50px;
     height:35px;
     font-size: 14px;

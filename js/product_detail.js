@@ -4,19 +4,21 @@ var div=document.getElementById("deta-pro");
 // console.log(div);
 // 在div中找到所有input元素
 var inputs=div.getElementsByTagName("input");
-// console.log(inputs);
+// var span=document.getElementsByClassName("count")[0];
+// console.log(span);
 // 遍历每个input，为当前的input添加一个onclick事件的处理函数
 for(var inp of inputs){
     inp.onclick=function(){
     var inp=this;
-    var input=inp.parentNode.children[6];
-    var n=parseInt(input.value);
+    var span=inp.parentNode.children[6];
+    // console.log(input);
+    var n=parseInt(span.innerHTML);
     if(inp.value=="+"){
         n++;
-    }else if(n>1){
+    }else if(inp.value=="-"&&n>1){
         n--;
     }
-    input.value=n;
+    span.innerHTML=n;
     }
 }
 //商品图片点击小图展示大图
