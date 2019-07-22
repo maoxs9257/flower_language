@@ -8,10 +8,9 @@
     <link rel="stylesheet" href="../css/product_detail.css">
 </head>
 <body>
-    <div style="width: 100%; height: 220px;">
-        <iframe src="html_top.html" width="100%" scrolling="No" noresize="noresize" name="topFrame" height="100%" frameborder="0">
-        </iframe>
-    </div>
+    <header id="header_top">
+
+    </header>
     <div class="header_top">
         <div class="fy-huayu">
             <ul>
@@ -37,12 +36,12 @@
                         </a>
                     </div>                   
                 </div>
-                <div class="product-font" id="deta-pro">
+                <div class="body_top_pro" id="deta-pro">
                     <p>美丽百合</p>
                     <p>￥200</p>
                     <p>花语：百合具有百年好合美好家庭、伟大的爱之含意，有深深祝福的意义。</p>
                     <p>生长习性：喜凉爽，较耐寒。高温地区生长不良。喜干燥，怕水涝。土壤湿度过高则引起鳞茎腐烂死亡。对土壤要求不严，但在土层深厚、肥沃疏松的砂质壤土中，鳞茎色泽洁白、肉质较厚。粘重的土壤不宜栽培。根系粗壮发达，耐肥。</p>
-                    <input type="button" value="加入购物车" class="cart">
+                    <input type="button" value="加入购物车" class="jiaru_gw">
                     <input type="button" value="-" class="reduce">
                     <span class="count">1</span>
                     <input type="button" value="+" class="add">
@@ -108,12 +107,13 @@
                     </div>
             </div>  
         </div>
+        <div id="shopping_c">
+        </div>
     </div>
-    <div style="width:100%;height:745px;">
-<!--引入html_bottom.html  -->
-        <iframe src="html_bottom.html" width="100%" height="100%" scrolling="No" noresize="noresize" frameborder="0">
-        </iframe>
-    </div>
+    <footer id="footer_bottom">
+    </footer>
+    <script src="../js/jquery-1.11.3.js"></script>
+    <script src="../js/header_footer.js"></script>
     <!-- DOM样式 -->
     <script src="../js/product_detail.js"></script>
 </body>

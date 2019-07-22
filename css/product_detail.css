@@ -13,7 +13,7 @@
     text-decoration: none;
     list-style: none;
 }
-.header_top ul>li{
+.header_top .fy-huayu ul>li{
     float: left;
     margin-right: 10px;
     height:50px;
@@ -56,29 +56,29 @@ ul::after{
     height:60px;
 }
 /* 左侧文本介绍 */
-.product-font{
+.body_top_pro{
     margin-left:68px;
     padding: 22px;
     position: absolute;
     top:41px;
     left:308px;
 }
-.product-font>p:first-child{
+.body_top_pro>p:first-child{
     font-size: 20px;
     padding-bottom: 20px;
 }
-.product-font>p:nth-child(2){
+.body_top_pro>p:nth-child(2){
     width:70px;
     font-size: 32px;
     border-top:3px solid #ddd;
     padding:20px 0;
 }
-.product-font>p:nth-child(3){
+.body_top_pro>p:nth-child(3){
     font-size: 16px;
     text-indent: 2em;
     padding-bottom: 15px;
 }
-.product-font>p:nth-child(4){
+.body_top_pro>p:nth-child(4){
     font-size: 14px;
     text-indent:2.5em;
     padding-bottom:20px;
@@ -89,7 +89,7 @@ input{
     height:40px;
     display: inline-block;
 }
-.product-font .cart{
+.body_top_pro .jiaru_gw{
     width:140px;
     border:0;
     background: #333;
@@ -98,11 +98,11 @@ input{
     text-align: center;
     font-size: 14px;
 }
-.product-font .reduce,.add{
+.body_top_pro .reduce,.add{
     width:30px;
     height:40px;
 }
-.product-font .count{
+.body_top_pro .count{
     display: inline-block;
     width:50px;
     height:35px;
@@ -111,7 +111,7 @@ input{
     line-height: 35px;
     border:1px solid  #ddd;
 }
-.product-font .cart:hover{
+.body_top_pro .jiaru_gw:hover{
     background:#000;
 }
 /* 右侧样式 */
