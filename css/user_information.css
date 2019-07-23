@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.user_all{
+    width:1200px;
+    margin:30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.user_all>.user_left{
+    width:32%;
+    border:1px solid #ddd;
+}
+.user_all>.user_left>.img_span{
+    display:inline-block;
+    border:1px solid #666;
+    border-radius: 50%;
+    margin: 10px;
+    width:70px;
+    height:70px;
+}
+.user_all>.user_left>.phone_a{
+    display:inline-block;
+    width:60%;
+}
+.user_left .phone_a .a_font>a{
+    display:inline-block;
+    border:1px solid #ddd;
+    padding: 2px 5px;
+    text-decoration: none;
+    color:#666;
+    font-size: 12px;
+}
+.user_all>.user_right{
+    width: 64%;
+    border: 1px solid #ddd;
+}
