@@ -1,15 +1,22 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color:#666;
 }
 .user_all{
     width:1200px;
     margin:30px auto;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
+/* 左侧 */
 .user_all>.user_left{
-    width:32%;
+    width:33%;
     border:1px solid #ddd;
 }
 .user_all>.user_left>.img_span{
@@ -19,20 +26,199 @@
     margin: 10px;
     width:70px;
     height:70px;
+    text-align: center;
 }
 .user_all>.user_left>.phone_a{
     display:inline-block;
     width:60%;
 }
+.user_all>.user_left>.phone_a>.phone{
+    padding: 20px 0 10px;
+}
 .user_left .phone_a .a_font>a{
     display:inline-block;
     border:1px solid #ddd;
     padding: 2px 5px;
-    text-decoration: none;
-    color:#666;
     font-size: 12px;
 }
+.user_all>.user_left>ul>li{
+    list-style: none;
+    border-top:1px solid #ddd;
+    padding:10px 15px;
+}
+/* 鼠标悬停字体加粗 */
+.user_all>.user_left>ul>li:hover{
+    font-weight: 700;
+}
+.user_all>.user_left>ul>li>a>span:last-child{
+    float: right;
+}
+
+
+
+/* 右侧 */
 .user_all>.user_right{
-    width: 64%;
+    width: 65%;
     border: 1px solid #ddd;
+    height: 760px;
+}
+/* 我的订单 */
+.user_all>.user_right>.my_det{
+    /* display: none; */
+    position: absolute;
+    top:0px;
+    right: 0px;
+    margin-top: 20px;
+    height: 100%;
+    width: 780px;;
+    background-image: url(../img/user_information/find.png);
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.user_all>.user_right>.my_det>p:first-child{
+    padding: 10px 20px 20px;
+    font-size: 16px;
+    color:#666;
+}
+.user_all>.user_right>.my_det>p:last-child{
+    padding: 20px 0 10px; 
+}
+.user_all>.user_right>.my_det>p:last-child a{
+    color:#0894ec;
+    padding: 8px 20px;
+    border-bottom: 2px solid #0894ec;
+}
+.user_all>.user_right>.my_det>p{
+    border-bottom: 1px solid #ddd;
+}
+/* 我的优惠券 */
+.user_right .my_youhui{
+    display: none;
+    position: absolute;
+    top:0;
+    right:0;
+    margin-top: 20px;
+    height: 100%;
+    width: 780px;;
+}
+.user_all>.user_right>.my_youhui>p{
+    padding: 10px 20px 20px;
+    font-size: 16px;
+    color:#666;
+}
+.user_all>.user_right>.my_youhui>div{
+    width:95%;
+    min-height: 22px;
+    border:1px solid #ddd;
+    margin:20px auto;
+}
+/* 我的下载 */
+.user_right .my_down{
+    display: none;
+    position: absolute;
+    top:0;
+    right:0px;
+    margin-top: 20px;
+    height: 100%;
+    width: 780px;
+}
+.user_all>.user_right>.my_down>p{
+    padding: 10px 20px 20px;
+    font-size: 16px;
+    color:#666;
+}
+.user_all>.user_right>.my_down>div{
+    width:95%;
+    min-height: 200px;
+    margin:20px auto;
+    border:1px solid #ddd;
+    background-image: url(../img/user_information/find.png);
+    background-position:center;
+    background-repeat:no-repeat;
+}
+/* 个人资料 */
+.user_right .my_zliao{
+    display: none;
+    position: absolute;
+    top:0;
+    right:0;
+    margin-top: 20px;
+    height: 100%;
+    width: 780px;
+}
+.user_all>.user_right>.my_zliao>p{
+    padding: 10px 20px 20px;
+    font-size: 16px;
+    color:#666;
+}
+.user_all>.user_right>.my_zliao>form{
+    border:1px solid #ddd;
+    margin:20px 15px;
+    padding: 20px;
+}
+.user_all>.user_right>.my_zliao>form span{
+    width:35%;
+    display:inline-block;
+    vertical-align: top;
+    font-size: 13px;
+    color:#666;
+}
+.user_all>.user_right>.my_zliao>form .inp_t1{
+    width:58%;
+    height: 30px;
+    line-height: 30px;
+}
+.user_all>.user_right>.my_zliao>form>div{
+    margin-top: 20px;
+}
+.user_all>.user_right>.my_zliao>form div button{
+    height: 35px;
+    font-size: 13px;
+    padding: 0 10px;
+    border:0;
+}
+.user_all>.user_right>.my_zliao>form div button:first-child{
+    background: #333;
+    color:#fff;
+}
+.user_all>.user_right>.my_zliao>form div button:last-child{
+    background: #fff;
+    border:1px solid #ddd;
+    margin-right: 10px;
+    color:#000;
+    float: right;
+}
+/* 收货地址 */
+.user_right .my_map{
+    display: none;
+    position: absolute;
+    top:0;
+    right: 0;
+    margin-top: 20px;
+    height: 95%;
+    width: 751px;
+    border:1px solid #ddd;
+    margin:20px 15px ;
+    padding:20px;
+}
+.user_right .my_map>p{
+    padding: 10px 10px 20px;
+    font-size: 16px;
+    color:#666;
+}
+.user_right .my_map>div>p{
+    font-size: 13px;
+    color:#666;
+}
+.user_right .my_map>div>input,.user_right .my_map>div>select{
+    display: inline-block;
+    width:100%;
+    height: 35px;
+    margin:10px 0 15px ;
+}
+.user_right .my_map>div>input:last-child{
+    width:67px;
+    border:1px solid #ddd;
+    background: #000;
+    color:#fff;padding: 1px 6px;
 }

@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="../css/user_information.css">
 </head>
 <body>
+    <!-- 引入html_top.html -->
+    <header id="header_top">
+
+    </header>
     <div class="user_all">
         <div class="user_left">
             <span class="img_span">
@@ -22,14 +26,144 @@
                 </p>
             </span>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="../img/user_information/dingdan.png" alt="">
+                        <span>我的订单</span>
+                        <span>></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="../img/user_information/youhui.png" alt="">
+                        <span>我的优惠券</span>
+                        <span>></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="../img/user_information/xiazai.png" alt="">
+                        <span>我的下载</span>
+                        <span>></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="../img/user_information/ziliao.png" alt="">
+                        <span>个人资料</span>
+                        <span>></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="../img/user_information/shouhuo.png" alt="">
+                        <span>收货地址</span>
+                        <span>></span>
+                    </a>
+                </li>
             </ul>
         </div>
-        <div class="user_right"></div>
+        <div class="user_right">
+            <div class="my_det">
+                <p>
+                    <img src="../img/user_information/dingdan.png" alt="">
+                    <span>我的订单</span>
+                </p>
+                <p>
+                <a href="javascript:;">全部订单</a>
+                </p>
+            </div>
+            <div class="my_youhui">
+                <p>                                     <img src="../img/user_information/youhui.png" alt="">
+                    <span>我的优惠券</span>
+                </p>
+                <div></div>
+            </div>
+            <div class="my_down">
+                <p>
+                    <img src="../img/user_information/xiazai.png" alt="">
+                    <span>下载列表</span> 
+                </p>
+                <div></div>
+            </div>
+            <div class="my_zliao">
+                <p>
+                    <img src="../img/user_information/ziliao.png" alt="">
+                    <span>个人资料</span>
+                </p>
+                <form action="">
+                    <div>
+                        <span>昵称</span>
+                        <input class="inp_t1" type="text">
+                    </div>
+                    <div class="img_up">
+                        <span>照片</span>
+                        <span>
+                        <img src="../img/user_information/user_in.png" alt="">
+                        <p><input type="file"></p>
+                        </span>
+                        
+                    </div>
+                    <div>
+                        <span>姓名</span>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <span>个人简介</span>
+                        <textarea name="" id="" cols="57" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <span>性别</span>
+                        <input type="radio" name="sex">男
+                        <input type="radio" name="sex">女
+                    </div>
+                    <div>
+                        <span>电话号码</span>
+                        <input type="text" value="13163259257">
+                    </div>
+                    <div>
+                        <button>保存更改</button>
+                        <button>取消</button>
+                    </div>
+                </form>
+            </div>
+            <div class="my_map">
+                <p>
+                    <img src="../img/user_information/shouhuo.png" alt="">
+                    <span>收货地址</span>  
+                </p>
+                <div>
+                    <p>国家/地区 *</p>
+                    <select name="" id="">
+                        <option value="">中国</option>
+                    </select>
+                    <p>姓名 *</p>
+                    <input type="text" placeholder="真实姓名："> 
+                    <p>地址 *</p>
+                    <input type="text" placeholder="编辑地址：">
+                    <input type="text" placeholder="楼层、房间号（可选"> 
+                    <p>镇/市 *</p>
+                    <input type="text" placeholder="镇/市">
+                    <p>省份 *</p>
+                    <select name="" id="">
+                        <option value="">请选择一个省份</option>
+                        <option value="">湖北</option>
+                        <option value="">上海</option>
+                        <option value="">北京</option>
+                        <option value="">深圳</option>
+                        <option value="">山东</option>
+                    </select>
+                    <p>邮政编码 *</p>
+                    <input type="text" placeholder="邮政编码">
+                    <input type="button" value="保存更改">
+                </div>
+            </div>
+        </div>
     </div>
+    <footer id="footer_bottom">
+
+    </footer>
+    <script src="../js/jquery-1.11.3.js"></script>
+    <script src="../js/header_footer.js"></script> 
 </body>
 </html>
