@@ -25,7 +25,7 @@ for(var inp of inputs){
 // 查找事件触发元素
 var imgs=document.getElementsByClassName("tupian_2");
 // 绑定事件处理函数
-for (var img of imgs){  
+for (var img of imgs){
     img.onclick=function(){
         var img=this;
     // 查找要修改的元素

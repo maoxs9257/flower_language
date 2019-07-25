@@ -31,6 +31,15 @@
 .container{
     padding:0;
     }
+/* 花语单词 */
+.huayu_log_font{
+    position: absolute;
+    top:160px;
+    left: 36%;
+    font-size:58px;
+    letter-spacing: 50px;
+    color: #fff;
+}
 /*�ڶ�����ͼЧ��*/
 .l_r_img{
     width:1200px;
