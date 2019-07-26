@@ -65,9 +65,9 @@ a{
 /* 我的订单 */
 .user_all>.user_right>.my_det{
     /* display: none; */
-    position: absolute;
+    /* position: absolute;
     top:0px;
-    right: 0px;
+    right: 0px; */
     margin-top: 20px;
     height: 100%;
     width: 780px;;
@@ -94,9 +94,9 @@ a{
 /* 我的优惠券 */
 .user_right .my_youhui{
     display: none;
-    position: absolute;
+    /* position: absolute;
     top:0;
-    right:0;
+    right:0; */
     margin-top: 20px;
     height: 100%;
     width: 780px;;
@@ -115,9 +115,9 @@ a{
 /* 我的下载 */
 .user_right .my_down{
     display: none;
-    position: absolute;
+    /* position: absolute;
     top:0;
-    right:0px;
+    right:0px; */
     margin-top: 20px;
     height: 100%;
     width: 780px;
@@ -139,9 +139,9 @@ a{
 /* 个人资料 */
 .user_right .my_zliao{
     display: none;
-    position: absolute;
+    /* position: absolute;
     top:0;
-    right:0;
+    right:0; */
     margin-top: 20px;
     height: 100%;
     width: 780px;
@@ -191,9 +191,9 @@ a{
 /* 收货地址 */
 .user_right .my_map{
     display: none;
-    position: absolute;
+    /* position: absolute;
     top:0;
-    right: 0;
+    right: 0; */
     margin-top: 20px;
     height: 95%;
     width: 751px;
@@ -221,4 +221,8 @@ a{
     border:1px solid #ddd;
     background: #000;
     color:#fff;padding: 1px 6px;
+}
+/* 点击添加样式 */
+.active{
+    font-weight: 700;
 }
