@@ -22,6 +22,5 @@ $("ul").on("click","li a",function(e){
     e.preventDefault();
     $(this).parent().addClass("active").siblings().removeClass("active");
     var href=$(this).attr("href");
-    $(href).show().siblings().hide();
-    
+    $(href).show().siblings().hide();    
 })

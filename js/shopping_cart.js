@@ -39,5 +39,32 @@ back_img.onclick=function(){
         s1.parentNode.removeChild(s1);
         }   
     }
-    
+// 点击+ - 改变数量
+// 事件委托给父元素p.p_bibn
+// 查找事件触发元素
+var p_bibns=document.getElementsByClassName("p_bibn");
+// console.log(p_bibns);
+// 绑定事件处理函数
+for(var p_bibn of p_bibns){
+p_bibn.onclick=function(e){
+    var p=e.target;
+    // console.log(p);
+    // 查找要修改的元素
+    var inp=p.parentNode.children[1];
+    var span=p.parentNode.children[4];
+    var n=parseInt(inp.value);
+    // console.log(span);
+    // 修改元素
+    if(p.className=="btn_one"&&n>1){
+        n--;
+    }else if(p.className=="btn_two"){
+        n++;
+    }
+    inp.value=n;
+    // console.log(span.innerHTML.slice(2));
+    // console.log(p.parentNode.children[4].getAttribute("data-sprice"));
+    var sprice=p.parentNode.children[4].getAttribute("data-sprice").slice(2);
+    span.innerHTML=`￥:${n*sprice}`;
+    }
+}
     
