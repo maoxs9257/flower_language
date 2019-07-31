@@ -12,10 +12,11 @@
 
 /* 表格样式 */
 .bg-inp{
-    width:90%;
+    width:110%;
     background: #fff;
     height:32px;
     border-radius: 3px;
+    border:1px solid #ddd;
 }
 #table_bg_two{
     width:32%;

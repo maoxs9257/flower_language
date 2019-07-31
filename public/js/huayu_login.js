@@ -19,3 +19,4 @@ function check_pwd(){
         msg2.innerHTML="格式错误！";
     }
 }
+// 登录验证

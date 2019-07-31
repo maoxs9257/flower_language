@@ -146,12 +146,15 @@
 /* 个人资料 */
 .zl_dd{
 	width:100px;
+	height: 0px;
+	overflow:hidden;
 	position: absolute;
 	top:40px;
 	right: 33px;
 	text-align: center;
 	background: #e0e0e0;
 	border-radius:3px;
+	transition:all 0.5s linear;
 }
 .zl_dd ul>li{
 	list-style: none;
@@ -166,4 +169,7 @@
 	width:12px;
 	height: 13px;
 	margin: 0;
+}
+.active_top{
+	height:100px;
 }

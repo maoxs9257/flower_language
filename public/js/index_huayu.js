@@ -28,7 +28,7 @@ window.onload=function(){
     window.onscroll=function(){
         var scrollTop=document.body.scrollTop || document.documentElement.scrollTop;
         // 两张大图
-        if(scrollTop>=300){
+        if(scrollTop>=100){
             left_img.style="left:0px";
             left_img.style.opacity="1";
             right_img.style="right:0";
