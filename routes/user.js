@@ -14,7 +14,7 @@ router.post("/login",function(req,res){
 		return;
 	}
 	//2.3执行sql语句
-	pool.query("SELECT * FROM xz_user WHERE uname=? AND upwd=?",[obj.uname,obj.upwd],function(err,result){
+	pool.query("SELECT * FROM hy_login WHERE lname=? AND lpwd=?",[obj.lname,obj.lpwd],function(err,result){
 		if (err) throw err;
 		console.log(result);
 		//判断数组长度是否大于0，大于0说明登录成功
